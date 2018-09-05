@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+        <link rel="shortcut icon" type"image/x-icon" href="RPLogo.png">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Riley's Webpage">
+        <meta name="author" content="Riley Parkerson">
+        <title>Riley's Website: Home</title>
+    </head>
+    <body>
+        <header>
+            <div class = "container">
+                <img src="RPLogo.png">
+                <h1> <span class="hili">Riley</span> Parkerson</h1>
+            </div>
+        </header>
+        
+        <table>
+          <tr>
+            <th class="highlight"><a href="website.html" style="display:block">HOME</a></th>
+            <th><a href="page2.html" style="display:block">BIOGRAPHY</a></th> 
+            <th><a href="page3.html" style="display:block">PORTFOLIO</a></th>
+          </tr>
+        </table>
+        
+       <style>
+        * {box-sizing: border-box;}
+        body {font-family: Verdana, sans-serif;}
+        .mySlides {display: none;}
+        img {vertical-align: middle;}
+        
+        /* Slideshow container */
+        .slideshow-container {
+          position: relative;
+          max-width:100%;
+          height: 500px;
+          overflow: hidden;
+        }
+        
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .dotcontainer {
+          margin-top: -35px;
+          position:absolute;
+          left: 48%;
+        }
+        
+        .active {
+          background-color: #717171;
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+        }
+        
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+        </style>
+    </head>
+    <body>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img1.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="img2.png" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="img3.jpg" style="width:100%">
+            </div>
+        </div>
+        <div class= "dotcontainer" style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+        <footer>
+            <div class="container">
+            <pre>   NBA Jerseys, Copryright &copy; 2018</pre>
+                <ul>
+                    <li>Written by Riley Parkerson <a href="mailto:riley.par@lvjusd.org">Email Me:</a></li>
+                    <li>Visit our School at <a href="https://www.granadahigh.com/">Granada High</a></li>
+                    <li>Visit our school's computer science department at <a href="http://www.staggeringbeauty.com/">Staggering Beauty</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
