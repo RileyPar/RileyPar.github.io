@@ -27,94 +27,60 @@
         
         <div class="navmenu" id="navbar">
             <ul>
-              <li id="plink1"><a href="#P1">PROJECT 1</a></li>
-              <li id="plink2"><a href="#P2">PROJECT 2</a></li>
-              <li id="plink3"><a href="#P3">PROJECT 3</a></li>
-              <li id="plink4"><a href="#P4">PROJECT 4</a></li>
+              <li id="plink1"><a href="#P1">PROJECT #1</a></li>
+              <li id="plink2"><a href="#P2">PROJECT #2</a></li>
+              <li id="plink3"><a href="#P3">PROJECT #3</a></li>
+              <li id="plink4"><a href="#P4">PROJECT #4</a></li>
             </ul>
         </div>
         
         <div class="section" id="P1">
-            <div class="sectionheader"><span class="hili">Project</span> 1</div>
-            <a href=" "></a>
+            <div class="sectionheader"><span class="hili">Project</span> #1</div>
+            <div class="sectionimg"><iframe width="100%" height="700px" src="https://www.youtube.com/embed/_dyHH6jXm5M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
             <div class="sectioncontainer">
-                <div class="sectiontitle">Blah</div>
+                <div class="sectiontitle">Color Match</div>
                 <div class="sectioncontent">
-                    pdigbiodfubgiodfbgoisdfbgoidfbgsdiob
-                </div>
-                <div class="sectiontitle">Bleh</div>
-                <div class="sectioncontent">
-                    vnadfopgnadfpoingpodfsgdf
-                </div>
-                <div class="sectiontitle">Bluh</div>
-                <div class="sectioncontent">
-                    dfgadfobofo biobv0iub9a8erbofgiab
+                    This project was made in Thunkable in two weeks by Spencer Williams and Riley Parkerson.
                 </div>
             </div>
         </div>
     
         <div class="section" id="P2">
-            <div class="sectionheader"><span class="hili">Project</span> 2</div>
-            <a href=" "></a>
+            <div class="sectionheader"><span class="hili">Project</span> #2</div>
+            <div class="sectionimg"><img src="NoImage.png"></div>
             <div class="sectioncontainer">
-                <div class="sectiontitle">Blah</div>
+                <div class="sectiontitle">(Project Name)</div>
                 <div class="sectioncontent">
-                    pdigbiodfubgiodfbgoisdfbgoidfbgsdiob
-                </div>
-                <div class="sectiontitle">Bleh</div>
-                <div class="sectioncontent">
-                    vnadfopgnadfpoingpodfsgdf
-                </div>
-                <div class="sectiontitle">Bluh</div>
-                <div class="sectioncontent">
-                    dfgadfobofo biobv0iub9a8erbofgiab
+                    (Project Description and Contributed by)
                 </div>
             </div>
         </div>
         
         <div class="section" id="P3">
-            <div class="sectionheader"><span class="hili">Project</span> 3</div>
-            <a href=" "></a>
+            <div class="sectionheader"><span class="hili">Project</span> #3</div>
+            <div class="sectionimg"><img src="NoImage.png"></div>
             <div class="sectioncontainer">
-                <div class="sectiontitle">Blah</div>
+                <div class="sectiontitle">(Project Name)</div>
                 <div class="sectioncontent">
-                    pdigbiodfubgiodfbgoisdfbgoidfbgsdiob
-                </div>
-                <div class="sectiontitle">Bleh</div>
-                <div class="sectioncontent">
-                    vnadfopgnadfpoingpodfsgdf
-                </div>
-                <div class="sectiontitle">Bluh</div>
-                <div class="sectioncontent">
-                    dfgadfobofo biobv0iub9a8erbofgiab
+                    (Project Description and Contributed by)
                 </div>
             </div>
         </div>
         
         <div class="section" id="P4">
-            <div class="sectionheader"><span class="hili">Project</span> 4</div>
-            <a href=" "></a>
+            <div class="sectionheader"><span class="hili">Project</span> #4</div>
+            <div class="sectionimg"><img src="NoImage.png"></div>
             <div class="sectioncontainer">
-                <div class="sectiontitle">Blah</div>
+                <div class="sectiontitle">(Project Name)</div>
                 <div class="sectioncontent">
-                    pdigbiodfubgiodfbgoisdfbgoidfbgsdiob
-                </div>
-                <div class="sectiontitle">Bleh</div>
-                <div class="sectioncontent">
-                    vnadfopgnadfpoingpodfsgdf
-                </div>
-                <div class="sectiontitle">Bluh</div>
-                <div class="sectioncontent">
-                    dfgadfobofo biobv0iub9a8erbofgiab
+                    (Project Description and Contributed by)
                 </div>
             </div>
         </div>
         <script>
-            // When the user scrolls the page, execute myFunction 
             window.onscroll = function() {myFunction()};
 
-            // Get the navbar
-            var navbar = document.getElementById("navbar");
+             var navbar = document.getElementById("navbar");
             var link1 = document.getElementById("P1");
             var plink1 = document.getElementById("plink1");
             var linkhili1top = link1.offsetTop;
@@ -129,29 +95,28 @@
             var linkhili4top = link4.offsetTop;
             var sticky = navbar.offsetTop;
             
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
             function myFunction() {
               if (window.pageYOffset >= (sticky - 20)) {
                 navbar.classList.add("sticky");
               } else {
                 navbar.classList.remove("sticky");
               }
-              if (window.pageYOffset >= (linkhili4top-150)) {
+              if ((window.pageYOffset) >= (linkhili4top - 50)) {
                 plink4.classList.add("linkhili");
                 plink3.classList.remove("linkhili");
                 plink2.classList.remove("linkhili");
                 plink1.classList.remove("linkhili");
-              } else if (window.pageYOffset >= (linkhili3top-150)) {
+              } else if ((window.pageYOffset) >= (linkhili3top - 50)) {
                 plink3.classList.add("linkhili");
                 plink4.classList.remove("linkhili");
                 plink2.classList.remove("linkhili");
                 plink1.classList.remove("linkhili");
-              } else if (window.pageYOffset >= (linkhili2top-150)) {
+              } else if ((window.pageYOffset) >= (linkhili2top - 50)) {
                 plink2.classList.add("linkhili");
                 plink4.classList.remove("linkhili");
                 plink3.classList.remove("linkhili");
                 plink1.classList.remove("linkhili");
-              } else  if (window.pageYOffset >= (linkhili1top-150)) {
+              } else  if ((window.pageYOffset) >= (linkhili1top - 50)) {
                 plink1.classList.add("linkhili");
                 plink4.classList.remove("linkhili");
                 plink3.classList.remove("linkhili");
@@ -175,7 +140,6 @@
     
         <footer>
             <div class="container">
-            <pre>   NBA Jerseys, Copryright &copy; 2018</pre>
                 <ul>
                     <li>Written by Riley Parkerson <a href="mailto:riley.par@lvjusd.org">Email Me:</a></li>
                     <li>Visit our School at <a href="https://www.granadahigh.com/">Granada High</a></li>
